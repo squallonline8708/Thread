@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:padding="10dp"
+    tools:context=".handlerMessageActivity">
+
+    <!--重新绘制的ProgressButton-->
+    <com.sdpw.squall.thread.ProgressButton
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shape_normal"
+        android:text="开始下载1"
+        android:id="@+id/btn_downLoad_handlerMessId"/>
+
+    <com.sdpw.squall.thread.ProgressButton
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn_downLoad_handlerMessId"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btn_shape_normal"
+        android:text="开始下载2"
+        android:id="@+id/btn_upLoad_handlerMessId"/>
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/btn_upLoad_handlerMessId"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:id="@+id/btn_ToastShow_handlerMess"
+        android:layout_alignParentStart="true"
+        android:text="主线程Toast测试"
+        />
+
+    <Button
+        android:id="@+id/btn_backId"
+        android:layout_marginStart="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/btn_ToastShow_handlerMess"
+        android:layout_below="@+id/btn_upLoad_handlerMessId"
+        />
+
+</RelativeLayout>

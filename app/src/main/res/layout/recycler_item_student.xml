@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="10dp">
+    <ImageView
+        android:id="@+id/imageId"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="学员姓名: 李磊"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_toEndOf="@id/imageId"
+        android:layout_marginStart="35dp"/>
+
+    <TextView
+        android:id="@+id/tv_Age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学员年龄: 18"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_toEndOf="@id/imageId"
+        android:layout_below="@id/tv_Name"
+        android:layout_marginStart="35dp"/>
+
+    <TextView
+        android:id="@+id/tv_Sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学员性别: 男"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_toEndOf="@id/imageId"
+        android:layout_below="@id/tv_Age"
+        android:layout_marginStart="35dp"/>
+
+    <TextView
+        android:id="@+id/tv_grade_CN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学员中文: 100"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_toEndOf="@id/imageId"
+        android:layout_below="@id/tv_Sex"
+        android:layout_marginStart="35dp"/>
+
+    <TextView
+        android:id="@+id/tv_grade_LG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学员思维: 100"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_toEndOf="@id/imageId"
+        android:layout_below="@id/tv_grade_CN"
+        android:layout_marginStart="35dp"/>
+
+    <TextView
+        android:id="@+id/tv_grade_EN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学员英文: 100"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_toEndOf="@id/imageId"
+        android:layout_below="@id/tv_grade_LG"
+        android:layout_marginStart="35dp"/>
+
+</RelativeLayout>
